@@ -1,0 +1,85 @@
+[07/Nov/2019 15:16:19] "POST /formpage/ HTTP/1.1" 200 1508
+Validation success
+Nama Depan : zluthfi
+Nama Belakang : mnabily
+Nama Panggilan : upi
+Email : luthfimnabil17@gmail.com
+Komentar : okwenoiewnoifqw
+[07/Nov/2019 15:16:20] "POST /formpage/ HTTP/1.1" 200 1508
+Not Found: /favicon.ico
+[07/Nov/2019 15:16:20] "GET /favicon.ico HTTP/1.1" 404 2218
+Traceback (most recent call last):
+  File "d:\python37\Lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "d:\python37\Lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "d:\python37\Lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "d:\python37\Lib\socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+[07/Nov/2019 15:16:20] "GET /favicon.ico HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 59744)
+Traceback (most recent call last):
+  File "d:\python37\Lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "d:\python37\Lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "d:\python37\Lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "d:\python37\Lib\socketserver.py", line 799, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\python37\Lib\wsgiref\handlers.py", line 141, in run
+    self.handle_error()
+  File "D:\Kuliah\Sec_Sys\Python\Keamanan_Env\lib\site-packages\django\core\servers\basehttp.py", line 88, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "d:\python37\Lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "d:\python37\Lib\wsgiref\handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "d:\python37\Lib\wsgiref\handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\python37\Lib\socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "d:\python37\Lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "d:\python37\Lib\socketserver.py", line 720, in __init__
+    self.handle()
+  File "D:\Kuliah\Sec_Sys\Python\Keamanan_Env\lib\site-pack
+basehttp.py", line 155, in handle
+    handler.run(self.server.get_app())
+  File "d:\python37\Lib\wsgiref\handlers.py", line 144, in
+    self.close()
+  File "d:\python37\Lib\wsgiref\simple_server.py", line 35,
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+
+*Error terjadi saat menekan tombol submit. Data muncul tetapi error juga muncul
